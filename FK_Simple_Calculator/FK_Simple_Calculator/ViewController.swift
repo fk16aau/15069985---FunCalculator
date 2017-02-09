@@ -8,37 +8,125 @@
 
 import UIKit
 
+
+func questionMaker() -> Int {
+    
+    let randomNumber1 = Int(arc4random_uniform(5))
+    let randomNumber2 = Int(arc4random_uniform(4))
+    
+    let result = randomNumber1 + randomNumber2
+    return result
+}
+
 class ViewController: UIViewController {
     
-    @IBOutlet weak var resultDisplay: UILabel!
+    @IBOutlet weak var Question: UILabel!
     
-    var Number1 = 0
-    var Number2 = 0
-    var Number3 = 0
+    @IBOutlet weak var Answer: UILabel!
     
-    @IBAction func btnNumber1(sender: UIButton) {
-        Number1 = 77
+    
+    
+    var result = questionMaker()
+    
+    
+    @IBAction func btn0(sender: UIButton) {
+        if Int(result) == 0 {
+            Answer.text = "Your Answer is Correct"
+        }
+        else {
+            Answer.text = "Your Answer is Wrong"
+        }
+    
+    }
+    
+    @IBAction func btn1(sender: UIButton) {
+        if Int(result) == 1 {
+            Answer.text = "Your Answer is Correct"
+        }
+        else {
+            Answer.text = "Your Answer is Wrong"
+        }
+    }
+    
+    @IBAction func btn2(sender: UIButton) {
+        if Int(result) == 2 {
+            Answer.text = "Your Answer is Correct"
+        }
+        else {
+            Answer.text = "Your Answer is Wrong"
+        }
+    }
+    
+    @IBAction func btn3(sender: UIButton) {
+        if Int(result) == 3 {
+            Answer.text = "Your Answer is Correct"
+        }
+        else {
+            Answer.text = "Your Answer is Wrong"
+        }
+    }
+    
+    @IBAction func btn4(sender: UIButton) {
+        if Int(result) == 4 {
+            Answer.text = "Your Answer is Correct"
+        }
+        else {
+            Answer.text = "Your Answer is Wrong"
+        }
+    }
+    
+    @IBAction func btn5(sender: UIButton) {
+        if Int(result) == 5 {
+            Answer.text = "Your Answer is Correct"
+        }
+        else {
+            Answer.text = "Your Answer is Wrong"
+        }
+    }
+    
+    @IBAction func btn6(sender: UIButton) {
+        if Int(result) == 6 {
+            Answer.text = "Your Answer is Correct"
+        }
+        else {
+            Answer.text = "Your Answer is Wrong"
+        }
+    }
+    
+    @IBAction func btn7(sender: UIButton) {
+        if Int(result) == 7 {
+            Answer.text = "Your Answer is Correct"
+        }
+        else {
+            Answer.text = "Your Answer is Wrong"
+        }
+    }
+    
+    @IBAction func btn8(sender: UIButton) {
+        if Int(result) == 8 {
+            Answer.text = "Your Answer is Correct"
+        }
+        else {
+            Answer.text = "Your Answer is Wrong"
+        }
+    }
+    
+    @IBAction func btn9(sender: UIButton) {
+        if Int(result) == 9 {
+            Answer.text = "Your Answer is Correct"
+        }
+        else {
+            Answer.text = "Your Answer is Wrong"
+        }
     }
     
     
-    @IBAction func btnNumber2(sender: UIButton) {
-        Number2 = 55
-    }
-    
-    @IBAction func calculateAddition(sender: UIButton) {
-        Number3 = Number2 + Number1
-      
-        
-    }
     
     
-    @IBAction func displayAddition(sender: UIButton) {
-        
-        resultDisplay.text = String(Number2+Number1)
-        
-        
-        
-    }
+    
+    
+    
+    
     
     
     
