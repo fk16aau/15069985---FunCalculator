@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A05C6ACB1E560D3C005F4923 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A05C6ACA1E560D3C005F4923 /* background.jpg */; };
+		A05C6ACD1E560D72005F4923 /* turtle.png in Resources */ = {isa = PBXBuildFile; fileRef = A05C6ACC1E560D72005F4923 /* turtle.png */; };
 		A0E9E88A1E439F3400956CE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E9E8891E439F3400956CE9 /* AppDelegate.swift */; };
 		A0E9E88C1E439F3400956CE9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E9E88B1E439F3400956CE9 /* ViewController.swift */; };
 		A0E9E88F1E439F3400956CE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0E9E88D1E439F3400956CE9 /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A05C6ACA1E560D3C005F4923 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = background.jpg; path = ../../background.jpg; sourceTree = "<group>"; };
+		A05C6ACC1E560D72005F4923 /* turtle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = turtle.png; path = ../../turtle.png; sourceTree = "<group>"; };
 		A0E9E8861E439F3400956CE9 /* FK_Simple_Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FK_Simple_Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0E9E8891E439F3400956CE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0E9E88B1E439F3400956CE9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +101,8 @@
 		A0E9E8881E439F3400956CE9 /* FK_Simple_Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				A05C6ACA1E560D3C005F4923 /* background.jpg */,
+				A05C6ACC1E560D72005F4923 /* turtle.png */,
 				A0E9E8891E439F3400956CE9 /* AppDelegate.swift */,
 				A0E9E88B1E439F3400956CE9 /* ViewController.swift */,
 				A0E9E88D1E439F3400956CE9 /* Main.storyboard */,
@@ -230,6 +236,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0E9E8941E439F3400956CE9 /* LaunchScreen.storyboard in Resources */,
+				A05C6ACD1E560D72005F4923 /* turtle.png in Resources */,
+				A05C6ACB1E560D3C005F4923 /* background.jpg in Resources */,
 				A0E9E8911E439F3400956CE9 /* Assets.xcassets in Resources */,
 				A0E9E88F1E439F3400956CE9 /* Main.storyboard in Resources */,
 			);
@@ -484,6 +492,7 @@
 				A0E9E8B01E439F3400956CE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A0E9E8B11E439F3400956CE9 /* Build configuration list for PBXNativeTarget "FK_Simple_CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +501,7 @@
 				A0E9E8B31E439F3400956CE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A0E9E8B41E439F3400956CE9 /* Build configuration list for PBXNativeTarget "FK_Simple_CalculatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +510,7 @@
 				A0E9E8B61E439F3400956CE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

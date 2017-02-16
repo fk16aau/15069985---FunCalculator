@@ -10,12 +10,106 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FK_Simple_Calculator/ViewController.swift"
-            timestampString = "508355593.578913"
+            timestampString = "508959708.277727"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
             landmarkName = "btn0(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FK_Simple_Calculator/ViewController.swift"
+            timestampString = "508959708.277727"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FK_Simple_Calculator.ViewController.result.getter : Swift.Int"
+                  moduleName = "FK_Simple_Calculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/fk16aau/Mobile%20Computing/FK_Simple_Calculator/FK_Simple_Calculator/ViewController.swift"
+                  timestampString = "508957687.241983"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "19">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FK_Simple_Calculator.ViewController.result.setter : Swift.Int"
+                  moduleName = "FK_Simple_Calculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/fk16aau/Mobile%20Computing/FK_Simple_Calculator/FK_Simple_Calculator/ViewController.swift"
+                  timestampString = "508957687.243041"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FK_Simple_Calculator.ViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; FK_Simple_Calculator.ViewController"
+                  moduleName = "FK_Simple_Calculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/fk16aau/Mobile%20Computing/FK_Simple_Calculator/FK_Simple_Calculator/ViewController.swift"
+                  timestampString = "508957687.243145"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "197">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FK_Simple_Calculator.ViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;FK_Simple_Calculator.ViewController&gt;"
+                  moduleName = "FK_Simple_Calculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/fk16aau/Mobile%20Computing/FK_Simple_Calculator/FK_Simple_Calculator/ViewController.swift"
+                  timestampString = "508957687.243227"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "126">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FK_Simple_Calculator/ViewController.swift"
+            timestampString = "508959708.277727"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "169"
+            endingLineNumber = "169"
+            landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
