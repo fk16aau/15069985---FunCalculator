@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A04EC98B1E688900007F6203 /* DraggedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04EC98A1E688900007F6203 /* DraggedImageView.swift */; };
 		A05142331E623A81007D3892 /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = A05142231E623A81007D3892 /* apple.png */; };
 		A05142341E623A81007D3892 /* number0.png in Resources */ = {isa = PBXBuildFile; fileRef = A05142241E623A81007D3892 /* number0.png */; };
 		A05142351E623A81007D3892 /* number1.png in Resources */ = {isa = PBXBuildFile; fileRef = A05142251E623A81007D3892 /* number1.png */; };
@@ -50,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A04EC98A1E688900007F6203 /* DraggedImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggedImageView.swift; sourceTree = "<group>"; };
 		A05142231E623A81007D3892 /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = apple.png; path = images/apple.png; sourceTree = SOURCE_ROOT; };
 		A05142241E623A81007D3892 /* number0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = number0.png; path = images/number0.png; sourceTree = SOURCE_ROOT; };
 		A05142251E623A81007D3892 /* number1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = number1.png; path = images/number1.png; sourceTree = SOURCE_ROOT; };
@@ -148,6 +150,7 @@
 				A0E9E8891E439F3400956CE9 /* AppDelegate.swift */,
 				A0E9E88B1E439F3400956CE9 /* ViewController.swift */,
 				A0E9E88D1E439F3400956CE9 /* Main.storyboard */,
+				A04EC98A1E688900007F6203 /* DraggedImageView.swift */,
 				A0E9E8901E439F3400956CE9 /* Assets.xcassets */,
 				A0E9E8921E439F3400956CE9 /* LaunchScreen.storyboard */,
 				A0E9E8951E439F3400956CE9 /* Info.plist */,
@@ -321,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0E9E88C1E439F3400956CE9 /* ViewController.swift in Sources */,
+				A04EC98B1E688900007F6203 /* DraggedImageView.swift in Sources */,
 				A0E9E88A1E439F3400956CE9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
