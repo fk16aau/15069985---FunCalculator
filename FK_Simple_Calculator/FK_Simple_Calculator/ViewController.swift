@@ -21,42 +21,15 @@ func questionMaker() -> (Int,Int,Int) {
     return (randomNumber1,result,randomNumber2)
 }
 
-func starAnimation(star : UIImageView) -> Void {
-    let fullRotation = CGFloat(M_PI * 2)
-    let duration = 2.0
-    let delay = 0.0
-    let options = UIViewKeyframeAnimationOptions.CalculationModeLinear
-    
-    UIView.animateKeyframesWithDuration(duration, delay: delay, options: options, animations: {
-        
-        // note that we've set relativeStartTime and relativeDuration to zero.
-        // Because we're using `CalculationModePaced` these values are ignored
-        // and iOS figures out values that are needed to create a smooth constant transition
-        UIView.addKeyframeWithRelativeStartTime(0, relativeDuration: 0, animations: {
-            star.transform = CGAffineTransformMakeRotation(1/3 * fullRotation)
-        })
-        
-        UIView.addKeyframeWithRelativeStartTime(0, relativeDuration: 0, animations: {
-            star.transform = CGAffineTransformMakeRotation(2/3 * fullRotation)
-        })
-        
-        UIView.addKeyframeWithRelativeStartTime(0, relativeDuration: 0, animations: {
-            star.transform = CGAffineTransformMakeRotation(3/3 * fullRotation)
-        })
-        
-        }, completion: nil)
-    
-}
-
 
 class ViewController: UIViewController {
     
+
     
     @IBOutlet weak var star1: UIImageView!
     @IBOutlet weak var star2: UIImageView!
     @IBOutlet weak var star3: UIImageView!
-    @IBOutlet weak var star4: UIImageView!
-    @IBOutlet weak var star5: UIImageView!
+    
     
     @IBOutlet weak var cngrtsAnswr1: UILabel!
     @IBOutlet weak var cngrtsAnswr2: UILabel!
@@ -80,21 +53,41 @@ class ViewController: UIViewController {
         self.cngrtsAnswr1.text = String(rndm1)
         self.cngrtsAnswr2.text = String(rndm2)
         self.cngrtsAnswr3.text = String(result)
+        UIView.animateWithDuration(2.0, animations: {
+            self.star3.center.y += self.view.bounds.width
+        })
+        UIView.animateWithDuration(2.0, animations: {
+            self.star2.center.y += self.view.bounds.width
+        })
+        UIView.animateWithDuration(2.0, animations: {
+            self.star1.center.y += self.view.bounds.width
+        })
+        
     }
     
     @IBAction func btn0(sender: UIButton) {
         if Int(result) == 0 {
            
             CongratsView.hidden = false
-            starAnimation(star1)
-            starAnimation(star2)
-            starAnimation(star3)
-            starAnimation(star4)
-            starAnimation(star5)
-        
+            UIView.animateWithDuration(2.0, animations: {
+                self.star3.center.y -= self.view.bounds.width
+            })
+            UIView.animateWithDuration(2.0, animations: {
+                self.star2.center.y -= self.view.bounds.width
+            })
+            UIView.animateWithDuration(2.0, animations: {
+                self.star1.center.y -= self.view.bounds.width
+            })
+       
             
         }
         else {
+            UIView.animateWithDuration(1, animations: {
+                self.questionMark.alpha = 0
+                self.questionMark.alpha = 1
+            })
+            
+
           
         }
     
@@ -104,13 +97,21 @@ class ViewController: UIViewController {
         if Int(result) == 1 {
            
             CongratsView.hidden = false
-            starAnimation(star1)
-            starAnimation(star2)
-            starAnimation(star3)
-            starAnimation(star4)
-            starAnimation(star5)
+            UIView.animateWithDuration(2.0, animations: {
+                self.star3.center.y -= self.view.bounds.width
+            })
+            UIView.animateWithDuration(2.0, animations: {
+                self.star2.center.y -= self.view.bounds.width
+            })
+            UIView.animateWithDuration(2.0, animations: {
+                self.star1.center.y -= self.view.bounds.width
+            })
         }
         else {
+            UIView.animateWithDuration(1, animations: {
+                self.questionMark.alpha = 0
+                self.questionMark.alpha = 1
+            })
             
             
         }
@@ -120,13 +121,21 @@ class ViewController: UIViewController {
         if Int(result) == 2 {
           
             CongratsView.hidden = false
-            starAnimation(star1)
-            starAnimation(star2)
-            starAnimation(star3)
-            starAnimation(star4)
-            starAnimation(star5)
+            UIView.animateWithDuration(2.0, animations: {
+                self.star3.center.y -= self.view.bounds.width
+            })
+            UIView.animateWithDuration(2.0, animations: {
+                self.star2.center.y -= self.view.bounds.width
+            })
+            UIView.animateWithDuration(2.0, animations: {
+                self.star1.center.y -= self.view.bounds.width
+            })
         }
         else {
+            UIView.animateWithDuration(1, animations: {
+                self.questionMark.alpha = 0
+                self.questionMark.alpha = 1
+            })
             
         }
     }
@@ -135,13 +144,21 @@ class ViewController: UIViewController {
         if Int(result) == 3 {
            
             CongratsView.hidden = false
-            starAnimation(star1)
-            starAnimation(star2)
-            starAnimation(star3)
-            starAnimation(star4)
-            starAnimation(star5)
+            UIView.animateWithDuration(2.0, animations: {
+                self.star3.center.y -= self.view.bounds.width
+            })
+            UIView.animateWithDuration(2.0, animations: {
+                self.star2.center.y -= self.view.bounds.width
+            })
+            UIView.animateWithDuration(2.0, animations: {
+                self.star1.center.y -= self.view.bounds.width
+            })
         }
         else {
+            UIView.animateWithDuration(1, animations: {
+                self.questionMark.alpha = 0
+                self.questionMark.alpha = 1
+            })
            
         }
     }
@@ -150,13 +167,23 @@ class ViewController: UIViewController {
         if Int(result) == 4 {
             
             CongratsView.hidden = false
-            starAnimation(star1)
-            starAnimation(star2)
-            starAnimation(star3)
-            starAnimation(star4)
-            starAnimation(star5)
+            UIView.animateWithDuration(2.0, animations: {
+                self.star3.center.y -= self.view.bounds.width
+            })
+            UIView.animateWithDuration(2.0, animations: {
+                self.star2.center.y -= self.view.bounds.width
+            })
+            UIView.animateWithDuration(2.0, animations: {
+                self.star1.center.y -= self.view.bounds.width
+            })
+            
+           
         }
         else {
+            UIView.animateWithDuration(1, animations: {
+                self.questionMark.alpha = 0
+                self.questionMark.alpha = 1
+            })
             
         }
     }
@@ -165,13 +192,22 @@ class ViewController: UIViewController {
         if Int(result) == 5 {
             
             CongratsView.hidden = false
-            starAnimation(star1)
-            starAnimation(star2)
-            starAnimation(star3)
-            starAnimation(star4)
-            starAnimation(star5)
+            UIView.animateWithDuration(2.0, animations: {
+                self.star3.center.y -= self.view.bounds.width
+            })
+            UIView.animateWithDuration(2.0, animations: {
+                self.star2.center.y -= self.view.bounds.width
+            })
+            UIView.animateWithDuration(2.0, animations: {
+                self.star1.center.y -= self.view.bounds.width
+            })
+         
         }
         else {
+            UIView.animateWithDuration(1, animations: {
+                self.questionMark.alpha = 0
+                self.questionMark.alpha = 1
+            })
            
         }
     }
@@ -180,13 +216,23 @@ class ViewController: UIViewController {
         if Int(result) == 6 {
            
             CongratsView.hidden = false
-            starAnimation(star1)
-            starAnimation(star2)
-            starAnimation(star3)
-            starAnimation(star4)
-            starAnimation(star5)
+            UIView.animateWithDuration(2.0, animations: {
+                self.star3.center.y -= self.view.bounds.width
+            })
+            UIView.animateWithDuration(2.0, animations: {
+                self.star2.center.y -= self.view.bounds.width
+            })
+            UIView.animateWithDuration(2.0, animations: {
+                self.star1.center.y -= self.view.bounds.width
+            })
+           
+          
         }
         else {
+            UIView.animateWithDuration(1, animations: {
+                self.questionMark.alpha = 0
+                self.questionMark.alpha = 1
+            })
           
         }
     }
@@ -195,13 +241,23 @@ class ViewController: UIViewController {
         if Int(result) == 7 {
             
             CongratsView.hidden = false
-            starAnimation(star1)
-            starAnimation(star2)
-            starAnimation(star3)
-            starAnimation(star4)
-            starAnimation(star5)
+            UIView.animateWithDuration(2.0, animations: {
+                self.star3.center.y -= self.view.bounds.width
+            })
+            UIView.animateWithDuration(2.0, animations: {
+                self.star2.center.y -= self.view.bounds.width
+            })
+            UIView.animateWithDuration(2.0, animations: {
+                self.star1.center.y -= self.view.bounds.width
+            })
+          
+           
         }
         else {
+            UIView.animateWithDuration(1, animations: {
+                self.questionMark.alpha = 0
+                self.questionMark.alpha = 1
+            })
            
         }
     }
@@ -210,13 +266,23 @@ class ViewController: UIViewController {
         if Int(result) == 8 {
            
             CongratsView.hidden = false
-            starAnimation(star1)
-            starAnimation(star2)
-            starAnimation(star3)
-            starAnimation(star4)
-            starAnimation(star5)
+            UIView.animateWithDuration(2.0, animations: {
+                self.star3.center.y -= self.view.bounds.width
+            })
+            UIView.animateWithDuration(2.0, animations: {
+                self.star2.center.y -= self.view.bounds.width
+            })
+            UIView.animateWithDuration(2.0, animations: {
+                self.star1.center.y -= self.view.bounds.width
+            })
+            
+        
         }
         else {
+            UIView.animateWithDuration(1, animations: {
+                self.questionMark.alpha = 0
+                self.questionMark.alpha = 1
+            })
 
         }
     }
@@ -224,28 +290,30 @@ class ViewController: UIViewController {
     @IBAction func btn9(sender: UIButton) {
         if Int(result) == 9 {
             CongratsView.hidden = false
-            starAnimation(star1)
-            starAnimation(star2)
-            starAnimation(star3)
-            starAnimation(star4)
-            starAnimation(star5)
+            UIView.animateWithDuration(2.0, animations: {
+                self.star3.center.y -= self.view.bounds.width
+            })
+            UIView.animateWithDuration(2.0, animations: {
+                self.star2.center.y -= self.view.bounds.width
+            })
+            UIView.animateWithDuration(2.0, animations: {
+                self.star1.center.y -= self.view.bounds.width
+            })
+            
+        
         }
         else {
+            UIView.animateWithDuration(1, animations: {
+                self.questionMark.alpha = 0
+                self.questionMark.alpha = 1
+            })
             
             
         }
     }
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -258,15 +326,13 @@ class ViewController: UIViewController {
         self.cngrtsAnswr2.text = String(rndm2)
         self.cngrtsAnswr3.text = String(result)
         
-        // Figure out CGRECTMAKE function
-        
-        //self.Answer.frame = CGRectMake(W*0.005,H*0.2,W*0,75,H*0.2)
-        
+
 
     
         
         // Do any additional setup after loading the view, typically from a nib.
     }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
