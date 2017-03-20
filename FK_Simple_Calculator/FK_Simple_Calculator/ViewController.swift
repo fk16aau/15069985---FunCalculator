@@ -50,9 +50,6 @@ class ViewController: UIViewController {
         (rndm1,result,rndm2) = questionMaker()
         self.number1.text = String(rndm1)
         self.number2.text = String(rndm2)
-        self.cngrtsAnswr1.text = String(rndm1)
-        self.cngrtsAnswr2.text = String(rndm2)
-        self.cngrtsAnswr3.text = String(result)
         UIView.animateWithDuration(2.0, animations: {
             self.star3.center.y += self.view.bounds.width
         })
@@ -322,9 +319,6 @@ class ViewController: UIViewController {
         self.number1.text = String(rndm1)
         self.number2.text = String(rndm2)
         self.CongratsView.hidden = true
-        self.cngrtsAnswr1.text = String(rndm1)
-        self.cngrtsAnswr2.text = String(rndm2)
-        self.cngrtsAnswr3.text = String(result)
         
 
 
